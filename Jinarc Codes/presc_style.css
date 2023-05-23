@@ -1,0 +1,810 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(Fonts/AvenirLTStd-Black.ttf);
+}
+@font-face {
+    font-family: AvenirBook;
+    src: url(Fonts/AvenirLTStd-Book.ttf);
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(Fonts/AvenirLTStd-Roman.ttf);
+}
+
+
+header{
+    max-width: 100%;
+    max-height: 22rem;
+    display: flex;
+    position: sticky;
+    column-gap: 22rem;
+}
+.jinarc_logo{
+    max-width: 25rem;  
+    margin-top: 1rem;
+}
+.jinarc_logo img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    max-width: 100%;
+}
+nav ul li{
+    background-color: #06264f;
+    font-family: AvenirRoman;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin: 10px;
+    list-style: none;
+}
+nav ul li a{
+    padding: 20px;
+    color: white;
+    font-size: 1.6rem;
+}
+nav ul li.active{
+    background-color:rgb(230, 160, 50);
+    color: white;
+}
+
+/*Main Page of Prescriber*/
+#main_page_presc{
+    position: relative;
+    height: 84svh;
+}
+/*Doctor, clipboard and bluebg*/
+.doctor_bg{
+    background-color: #06264f;
+    height: 41.7rem;
+    width: 31%;
+}
+.doctor_img{
+    position: relative;
+    max-width: 25rem;
+    height: 24rem;
+    top: 5%;
+    left: 7%;
+}
+.doctor_img img{
+    width: 100%;
+    height: 100%;
+}
+.clipboard_img{
+    position: relative;
+    max-width: 21rem;
+    height: 20rem;
+    transform: rotate(27deg);
+    bottom: 10%;
+    left: 37%;
+    z-index: 1;
+}
+.clipboard_img img{
+    width: 100%;
+    height: 100%;
+}
+.full{
+    bottom: 2%;
+    left: 1%;
+    position: absolute;
+    color: white;
+    font-family: AvenirRoman;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+/*Doctor, clipboard and bluebg*/
+
+/*List with links*/
+.presclist_bg{
+    position: absolute;
+    background-color: #bdd7ee;
+    min-height: 41.7rem;
+    width: 69%;
+    right: 0;
+    top: 0;
+}
+.presclist_bg ul{
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    max-width: 100%;
+    min-height: 200px;
+    list-style: none;
+}
+.presclist_bg ul li a:hover{
+    background: #06264f;
+    color: white;
+    transition: 0.3s;
+    width: 40rem;
+}
+.presclist_bg ul li a{
+    text-decoration: none;
+    color: black;
+    width: 100rem;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.presclist_bg ul li:before{
+    content: "▶";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size:2.6rem;
+    width: 10px;
+    left: -1em;
+    top: -0.2em;
+    position: relative;
+}
+.importance, .certified, .enroll, .monitor, .report, .be{
+    background: white;
+    margin: 3rem;
+}
+.importance a{
+    padding: 0 20rem 0 10px;
+}
+.certified a{
+    padding: 0 13.7rem 0 10px;
+}
+.enroll a{
+    padding: 0 16.3rem 0 10px;
+}
+.monitor a{
+    padding: 0 1.4rem 0 10px;
+}
+.report a{
+    padding: 0 20.9rem 0 10px;
+}
+.be a{
+    padding: 0 21.8rem 0 10px;
+}
+.tolvaptan{
+    bottom: 2%;
+    right: 1%;
+    position: absolute;
+    color: black;
+    font-family: AvenirRoman;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+/*List with links*/
+
+/*2nd page/ What is the importance*/
+#second_page_presc{
+    height: 100svh;
+    width: 100%;
+    position: relative;
+}
+.second_page_container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.blue-bgsecond{
+    position: relative;
+    background: #06264f;
+    min-height: 49.2rem;
+    width: 31%;
+}
+
+/*kidney and meds w/ blue background*/
+.liver-check{
+    max-width: 16rem;
+    height: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8.5rem;
+}
+.liver-check img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.med-presc{
+    position: relative;
+    max-width: 17rem;
+    margin: 0 auto;
+    height: 23.8rem;
+}
+.med-presc img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*kidney and meds w/ blue background*/
+
+/*What is the importance with button*/
+.light-bgsecond{
+    position: relative;
+    background: #bdd7ee;
+    min-height: 49.3rem;
+    max-width: 69%;
+}
+.title-btnsecond{
+    margin-top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #06264f;
+    justify-content:space-around;
+    margin-right: 0 1rem;
+    min-height: 100%;
+}
+
+.title-btnsecond h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-bottom: 4px;
+
+}
+@media (max-width: 882px){
+    .title-btnsecond h1{
+        font-size: 0.7rem;
+    }
+}
+.top-second{
+    background: rgb(230, 160, 50);
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0px 30px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+.top-second:hover{
+    color: white;
+}
+@media (max-width: 882px){
+    .top-second{
+        font-size: 1rem;
+    }
+}
+.importance-container{
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: AvenirRoman;
+}
+.importance-container li{
+    line-height: 2.2rem;
+}
+.importance-container ul li{
+    margin-left: 5.8rem;
+    margin-top: 5px;
+}
+.importance-container p{
+    margin-top: 1rem;
+    padding: 0 10px;
+}
+.educ, .ensure{
+    margin-left: 5.8rem;
+    padding-left: 4px;
+}
+.educ li{
+    margin-left: 5.5rem;
+
+}
+
+/*What is the importance with button*/
+
+/*3rd page/ How to become*/
+#third_page_presc{
+    height: 100svh;
+    width: 100%;
+    position: relative;
+}
+.third_page_container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.blue-bgthird{
+    position: relative;
+    background: #06264f;
+    min-height: 49.3rem;
+    width: 31%;
+}
+/*Certificate*/
+.certified-presc{
+    margin: 13rem auto;
+    max-width: 23rem;
+    height: 23rem;
+
+}
+.certified-presc img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*Certificate*/
+
+/*How to become a certified prescriber of Jinarc w/ button*/
+.light-bgthird{
+    position: relative;
+    background: #bdd7ee;
+    min-height: 49.3rem;
+    max-width: 69%;
+}
+.title-btnthird{
+    margin-top: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #06264f;
+    justify-content: space-around;
+    margin-right: 0 1rem;
+    min-height: 100%;
+
+}
+.title-btnthird h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-bottom: 4px;
+}
+.top-third{
+    background: rgb(230, 160, 50);
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0px 30px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+.top-third:hover{
+    color: white;
+}
+.cert-container{
+    max-width: 90%;
+    margin: 4rem auto;
+}
+.review{
+    font-family: AvenirRoman;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+}
+.review ul{
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+.review ul li{
+    margin-left: 2rem;
+    margin: 0.5rem 0;
+}
+.review ul li p{
+    font-size: 1.4rem;
+    background: rgb(230, 160, 50);
+    padding: 0 10px;
+    text-align: center;
+    max-width: 30%;
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+}
+.review ul li p:hover{
+    background: #06264f;
+    color: white;
+}
+.review ul li p::before{
+    content: "▶";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 2rem;
+    width: 10px;
+    left: -1.1em;
+    top: -0.13em;
+    position: relative;
+}
+.review ul li p::after{
+    content: "◀";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 2rem;
+    width: 10px;
+    margin-left: 7.75em;
+    top: -1em;
+    position: relative;
+}
+.pass-the{
+    font-family: AvenirRoman;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+}
+.pass-the ul{
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+}
+.pass-the ul li{
+    margin-left: 2rem;
+    margin: 1.5rem 0;
+}
+.pass-the{
+    margin-top: 1em;
+}
+.pass-the p{
+    background: rgb(230, 160, 50);
+    width: 60%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2px 20px;
+    margin-left: 3rem;
+    margin-top: 0.5em;
+    color: black;
+}
+.pass-the p:before{
+    content: "▶";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 2rem;
+    width: 10px;
+    left: -1.4em;
+    top: -0.13em;
+    position: relative;
+}
+.pass-the::after{
+    content: "◀";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 2rem;
+    width: 10px;
+    left: 18.7em;
+    top: -1em;
+    position: relative;
+}
+.pass-the p:hover{
+    background: #06264f;
+    color: white;
+}
+/*3rd page/ How to become*/
+
+/*4th page/ How do I enroll*/
+#fourth_page_presc{
+    height: 100dvh;
+    background: #bdd7ee;
+}
+.light-bgfourth{
+    padding-top: 12rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.title-btnfourth{
+    display: flex;
+    flex: row wrap;
+    background: #06264f;
+    max-width: 100%;
+    justify-content:space-around;
+    gap: 29rem;
+    margin-right: 0 1rem;
+    margin-left: 10rem;
+}
+.title-btnfourth h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 1.8rem;
+    padding-bottom: 4px;
+    padding-right: 6rem;
+}
+.fourth_page_list{
+    margin: 0 auto;
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    max-width: 80%;
+    min-height: 10rem;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+.counsel{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.counsel li{
+    margin-left: 2.5rem;
+    padding-left: 0.5rem;
+    line-height: 2rem;
+}
+.counsel li p{
+    margin: 0.5rem 0 1rem 2rem;
+    background: rgb(230, 160, 50);
+    max-width: 25%;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+.counsel li p:hover{
+    background: #06264f;
+    color: white;
+}
+.after{
+    max-width: 80%;
+    margin-left: 4.5rem;
+    margin-top: 0.8rem;
+    line-height: 3rem;
+}
+.after li{
+    padding-left: 0.5rem;
+}
+.after-container{
+    max-width: 60rem; 
+}
+.telefax-container{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-right: 40rem;
+    margin-top: 0.5rem;
+}
+.telefax{
+    max-width: 3rem;
+    height: 3rem;
+}
+.telefax img{
+    width: 100%;
+    height: 100%;
+}
+.globe-container{
+    display: flex;
+    gap: 1rem;
+    margin-right: 32.5rem;
+    margin-top: 0.5rem;
+}
+.globe{
+    max-width: 2.8rem;
+    height: 2.8rem;
+}
+.globe img{
+    width: 100%;
+    height: 100%;
+}
+.smart-container{
+    display: flex;
+    gap: 1rem;
+    margin-right: 32.6rem;
+    margin-top: 0.5rem;
+}
+.smart{
+    max-width: 3.5rem;
+    height: 3.5rem;
+}
+.smart img{
+    width: 100%;
+    height: 100%;
+}
+.top-fourth{
+    background: rgb(230, 160, 50);
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0px 30px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+.top-fourth:hover{
+    color: white;
+}
+/*4th page/ How do I enroll*/
+
+/*5th page/ once a patient*/
+#fifth_page_presc{
+    height: 100svh;
+    background: #bdd7ee;
+
+}
+.light-bgfifth{
+    padding-top: 12rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.title-btnfifth{
+    display: flex;
+    flex: row wrap;
+    background: #06264f;
+    max-width: 100%;
+    justify-content: space-around;
+    gap: 15rem;
+    margin-right: 0 1rem;
+    margin-left: 7rem;
+}
+.title-btnfifth h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 1.8rem;
+    padding-bottom: 4px;
+}
+.top-fifth{
+    background: rgb(230, 160, 50);
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0px 30px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    margin-right: 1rem;
+}
+.top-fifth:hover{
+    color: white;
+}
+.fifth-page-list{
+    font-family: AVenirRoman;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 3rem 0 0 8rem;
+    padding-left: 1rem;
+}
+.months-treatment{
+    max-width: 90rem;
+    height: 13rem;
+}
+.months-treatment img{
+    width: 100%;
+    height: 100%;
+}
+.assess-pat{
+    font-family: AVenirRoman;
+    font-size: 1.5rem;
+    max-width: 90%;
+    min-height: max-content;
+    margin-left: 10.5rem;
+    margin-top: 5rem;
+    padding-left: 0.5rem;
+}
+/*5th page/ once a patient*/
+
+/*6th page/ How should I report*/
+#sixth_page_presc{
+    height: 100svh;
+    width: 100%;
+    position: relative;
+}
+.sixth_page_container{
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.blue-bgsixth{
+    position: relative;
+    background: #06264f;
+    height: 49.2rem;
+    width: 31%;
+}
+.liver-crying{
+    max-width: 18rem;
+    height: 18rem;
+    margin: 12rem auto 0;
+    padding-bottom: 4rem;
+}
+.liver-crying img{
+    width: 100%;
+    height: 100%;
+}
+.lab-results{
+    position: absolute;
+    height: 24rem;
+    bottom: 2px;
+    left: 4.1rem;
+    padding-top: 0.4rem;
+}
+.lab-results img{
+    width: 100%;
+    height: 100%;
+}
+.light-bgsixth{
+    background: #bdd7ee;
+    height: 49.2rem;
+    width: 69%;
+}
+.title-btnsixth{
+    display: flex;
+    flex: row wrap;
+    background: #06264f;
+    max-width: 100%;
+    justify-content: space-around;
+    gap: 15rem;
+    margin-top: 12rem;
+}
+.title-btnsixth h1{
+    color: white;
+    font-family: AvenirBlack;
+    font-size: 1.8rem;
+    padding-bottom: 4px;
+}
+.top-sixth{
+    background: rgb(230, 160, 50);
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0px 30px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    margin-right: 1rem;
+}
+.top-sixth:hover{
+    color: white;
+}
+.presc-listsix{
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+    max-width: 100%;
+    line-height: 2rem;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+.to-report ul li{
+    padding-left: 2rem;
+}
+.check-first, .check-second, .check-third, .check-fourth{
+    display: flex;
+    justify-content: start;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 0.6rem;
+}
+.checkone, .checktwo, .checkthree, .checkfour{
+    max-width: 2.6rem;
+    height: 2.6rem;
+}
+.checkone img, .checktwo img, .checkthree img, .checkfour img{
+    width: 100%;
+    height: 100%;
+}
+.oppi{
+    max-width: 90%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.oppi ul{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+    line-height: 2.5rem;
+}
+.oppi ul li a{
+    text-decoration: underline;
+}
+.safety-download{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    float: left;
+    gap: 2rem;
+}
+.safe-down{
+    background: rgb(230, 160, 50);
+    color: black;
+    border-radius: 5px;
+    padding: 2px 30px;
+}
+.safe-down:hover{
+    background: #06264f;
+    color: white;
+}
+/*6th page/ How should I report*/

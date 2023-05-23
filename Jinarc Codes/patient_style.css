@@ -1,0 +1,765 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(Fonts/AvenirLTStd-Black.ttf);
+}
+@font-face {
+    font-family: AvenirBook;
+    src: url(Fonts/AvenirLTStd-Book.ttf);
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(Fonts/AvenirLTStd-Roman.ttf);
+}
+
+header{
+    max-width: 100%;
+    max-height: 22rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    column-gap: 22rem;
+    background: white;
+    border-bottom: 7px solid #fedc67;
+    z-index: 5;
+}
+.jinarc_logo{
+    max-width: 25rem;  
+    margin-top: 1rem;
+}
+.jinarc_logo img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    max-width: 100%;
+
+}
+nav ul li{
+    background-color: #06264f;
+    font-family: AvenirRoman;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin: 10px;
+    list-style: none;
+}
+nav ul li a{
+    padding: 20px;
+    font-size: 1.6rem;
+    color: white;
+}
+nav ul li:hover{
+    color:black;
+    background: rgb(230, 160, 50);
+    transition: 0.6s;
+}
+nav ul li.active{
+    background-color: rgb(230, 160, 50);
+    color:black
+}
+/*Main Page of Prescriber*/
+#main_page_patient{
+    height: 100dvh;
+    position: relative;
+}
+/*Doctor, clipboard and bluebg*/
+.doctor_bg{
+    position: absolute;
+    background-color: #06264f;
+    height: 100%;
+    width: 31%;
+}
+.doctor_img{
+    position: relative;
+    max-width: 25rem;
+    height: 24rem;
+    top: 20%;
+    left: 7%;
+}
+.doctor_img img{
+    width: 100%;
+    height: 100%;
+}
+.clipboard_img{
+    position: relative;
+    max-width: 21rem;
+    height: 20rem;
+    transform: rotate(27deg);
+    bottom: -8%;
+    left: 37%;
+    z-index: 1;
+}
+.clipboard_img img{
+    width: 100%;
+    height: 100%;
+}
+.full{
+    bottom: 2%;
+    left: 1%;
+    position: absolute;
+    color: white;
+    font-family: AvenirRoman;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+/*Doctor, clipboard and bluebg*/
+
+.what_is_jinarcbg{
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 69%;
+    right: 0;
+}
+.what_is_jinarcbg ul{
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    max-width: 100%;
+    min-height: 200px;
+    list-style: none;
+    
+}
+.what_is_jinarcbg ul li a{
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    font-family: AvenirRoman;
+    font-size: 2rem;
+    padding: 0 15px;
+}
+.what_is_jinarcbg ul li:before{
+    content: "▶";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size:2.6rem;
+    width: 10px;
+    left: -1em;
+    top: -0.2em;
+    position: relative;
+}
+.what_is_jinarc, .certified, .how_enroll, .what_need, .how_get{
+    background: wheat;
+    margin: 3rem;
+    width: 94%;
+}
+.tolvaptan{
+    bottom: 2%;
+    right: 1%;
+    position: absolute;
+    color: black;
+    font-family: AvenirRoman;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+
+/*2nd page/ What is Jinarc*/
+#second_page_patient{
+    height: 100dvh;
+    position: relative;
+}
+.kidney_bg{
+    position: absolute;
+    background-color: #06264f;
+    min-height: 100%;
+    width: 31%;
+    left: 0;
+}
+.kidney_img{
+    max-width: 95%;
+    height: 20rem;
+    margin: auto;
+    margin-top: 19rem;
+    position: relative;
+}
+.kidney_img img{
+    width: 100%;
+    height: 100%;
+}
+.what_is_bg{
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 69%;
+    font-size: 1.6rem;
+    font-family: AvenirRoman;
+    right: 0;
+}
+.what_isbtn{
+    color: white;
+    background: #06264f;
+    margin-top: 12rem;
+    left: 0;
+    padding: 0 3rem 0 1.5rem;
+    font-family: AvenirBlack;
+    font-size: 1.9rem;
+}
+.top{
+    position: absolute;
+    background-color: rgb(230, 160, 50);
+    border-radius: 10px;
+    text-align: center;
+    width: 10%;
+    right: 3%;
+    top: 24.7%;
+    color: black;
+    cursor: pointer;
+}
+.what_is_bg ul{
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    max-width: 85%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding-left: 2%;
+}
+.it_has_not{
+    margin-top: 3%;
+    font-size: 1rem;
+}
+/*2nd page/ What is the importance*/
+
+/*3rd page/ Who should not take Jinarc*/
+
+#third_page_patient{
+    height: 100dvh;
+    position: relative;
+}
+.do_not_takebg{ 
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 100%;
+}
+.who_shouldbtn{
+    color: white;
+    background: #06264f;
+    margin-top: 12rem;
+    margin-left: 6%;
+    padding: 0 3rem 0 1.5rem;
+    font-family: AvenirBlack;
+    font-size: 1.9rem;
+}
+.top_second{
+    position: absolute;
+    background-color: rgb(230, 160, 50);
+    border-radius: 10px;
+    text-align: center;
+    width: 7.5%;
+    right: 3%;
+    top: 24.7%;
+    color: black;
+    cursor: pointer;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.do_notp{
+    font-size: 1.5rem;
+    font-family: AvenirBlack;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+.do_not_takeimgs{
+    position: relative;
+    min-height: 15rem;
+}
+.liver_probimg{
+    max-width: 12rem;
+    height: 13rem;
+    position: absolute;
+    top: 16%;
+    left: 7%;
+}
+.liver_probimg img{
+    width: 100%;
+    height: 100%;
+}
+.blood_img{
+    max-width: 20rem;
+    height: 10rem;
+    position: absolute;
+    left: 22%;
+    top: 32%;
+}
+.blood_img img{
+    width: 100%;
+    height: 100%;
+}
+.blood_img2{
+    max-width: 11rem;
+    height: 6rem;
+    position: absolute;
+    left: 29%;
+    top: 27%;
+}
+.blood_img2 img{
+    width: 100%;
+    height: 100%;
+}
+.cube_sugarimg{
+    max-width: 11rem;
+    height: 6rem;
+    position: absolute;
+    left: 26%;
+    top: 63%;
+}
+.cube_sugarimg img{
+    width: 100%;
+    height: 100%;
+}
+.allergic_img{
+    max-width: 20rem;
+    height: 11rem;
+    position: absolute;
+    left: 38%;
+    top: 26%;
+}
+.allergic_img img{
+    width: 100%;
+    height: 100%;
+}
+.thirst_img{
+    max-width: 28rem;
+    height: 8rem;
+    position: absolute;
+    top: 46%;
+    left: 52%;
+}
+.thirst_img img{
+    width: 100%;
+    height: 100%;
+}
+.dehydrated_img{
+    max-width: 28rem;
+    height: 12rem;
+    position: absolute;
+    top: 22%;
+    right: 20%;
+}
+.dehydrated_img img{
+    width: 100%;
+    height: 100%;
+}
+.urinate_img{
+    max-width: 28rem;
+    height: 12rem;
+    position: absolute;
+    top: 22%;
+    right: 3%;
+}
+.urinate_img img{
+    width: 100%;
+    height: 100%;
+}
+/*images label*/
+.do_not_takep{
+    position: relative;
+    min-height: 10rem;
+}
+.history{
+    position: absolute;
+    font-family: AvenirBook;
+    left: 7%;
+    background-color: rgb(230, 160, 50);
+    max-width: 12rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.excludes{
+    position: absolute;
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: AvenirRoman;
+    background: black;
+    top: 34%;
+    left: 7%;
+    max-width: 12rem;
+    text-align: center;
+}
+.sodium{
+    position: absolute;
+    font-family: AvenirBook;
+    left: 23%;
+    background-color: rgb(230, 160, 50);
+    max-width: 12rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.allergic{
+    position: absolute;
+    font-family: AvenirBook;
+    left: 38.5%;
+    background-color: rgb(230, 160, 50);
+    max-width: 10rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.cannot{
+    position: absolute;
+    font-family: AvenirBook;
+    left: 52%;
+    background-color: rgb(230, 160, 50);
+    max-width: 13rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.dehydrated{
+    position: absolute;
+    font-family: AvenirBook;
+    padding: 0.7rem 0.4rem;
+    right: 19%;
+    background-color: rgb(230, 160, 50);
+    max-width: 11rem;
+    height: 3.4rem;
+    font-size: 1.4rem;
+}
+.urinate{
+    position: absolute;
+    font-family: AvenirBook;
+    right: 3%;
+    background-color: rgb(230, 160, 50);
+    max-width: 11rem;
+    height: 3.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+/*3rd page/ Who should not take Jinarc*/
+
+/*4th page/ How do I enroll*/
+#fourth_page_patient{
+    height: 100dvh;
+    position: relative;
+}
+.med_databg{
+    position: absolute;
+    background-color: #06264f;
+    min-height: 100%;
+    width: 31%;
+    left: 0;
+}
+.med_dataimg{
+    max-width: 23rem;
+    height: 25rem;
+    margin: auto;
+    margin-top: 18rem;
+    position: relative;
+}
+.med_dataimg img{
+    width: 100%;
+    height: 100%;
+}
+.how_enrollbg{
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 69%;
+    font-size: 1.5rem;
+    font-family: AvenirBook;
+    right: 0;
+}
+.how_enrollbtn{
+    color: white;
+    background: #06264f;
+    margin-top: 12rem;
+    left: 0;
+    padding: 0 3rem 0 1.5rem;
+    font-family: AvenirRoman;
+    font-size: 1.9rem;
+}
+.top_third{
+    position: absolute;
+    background-color: rgb(230, 160, 50);
+    border-radius: 10px;
+    text-align: center;
+    width: 10%;
+    right: 5%;
+    top: 24.7%;
+    color: black;
+    cursor: pointer;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.to_enroll{
+    max-width: 55rem;
+    margin-top: 4.5%;
+    margin-left: 2.5%;
+    line-height: 2.5rem;
+}
+.contactli{
+    margin-top: 2%;
+}
+.how_enrollbg ol{
+    max-width: 53rem;
+    margin-left: 8%;
+    margin-top: 2%;
+    line-height: 2.8rem;
+}
+.how_enrollbg ol li{
+    padding-left: 5%;
+}
+.jinarc_contact{
+    position: relative;
+    margin-top: 3%;
+    min-height: 8rem;
+}.jinarc_contact p{
+    margin-left: 11%;
+}
+.telefax{
+    max-width: 2.1rem;
+    height: 2.1rem;
+    position: absolute;
+    left: 7.5%;
+    bottom: 71%;
+}
+.telefax img{
+    width: 100%;
+    height: 100%;
+}
+.telefaxp{
+    position: absolute;
+    top: 5%;
+}
+.globe{
+    max-width: 2.1rem;
+    height: 2.1rem;
+    position: absolute;
+    left: 7.6%;
+    top: 36%;
+}
+.globe img{
+    width: 100%;
+    height: 100%;
+}
+.globep{
+    position: absolute;
+    top: 40.4%;
+}
+.smart{
+    position: absolute;
+    max-width: 2.5rem;
+    height: 2.5rem;
+    bottom: -2%;
+    left: 7.2%;
+}
+.smart img{
+    width: 100%;
+    height: 100%;
+}
+.smartp{
+    position: absolute;
+    bottom: 0;
+}
+
+/*4th page/ How do I enroll*/
+
+
+/*5th page/ What do I need to do while taking Jinarc*/
+#fifth_page_patient{
+    height: 100svh;
+    position: relative;
+}
+.what_needbg{ 
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 100%;
+    font-family: AvenirRoman;
+    font-size: 1.5rem;
+}
+.what_needbtn{
+    color: white;
+    background: #06264f;
+    margin-top: 12rem;
+    margin-left: 6%;
+    padding: 0 3rem 0 1.5rem;
+    font-family: AvenirBlack;
+    font-size: 1.9rem;
+}
+.top_fourth{
+    position: absolute;
+    background-color: rgb(230, 160, 50);
+    border-radius: 10px;
+    text-align: center;
+    width: 7.5%;
+    right: 4%;
+    top: 24.7%;
+    color: black;
+    cursor: pointer;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.reduce{
+    position: relative;
+    max-width: 90rem;
+}
+.reduce_img{
+    max-width: 7%;
+    height: 6rem;
+    margin-left: 8%;
+    margin-top: 1.1%;
+}
+.reduce_img img{
+    width: 100%;
+    height: 100%;
+}
+.reduce p{
+    left: 16.8%;
+    bottom: 14%;
+    position: absolute;
+}
+.what_needbg ol{
+    min-height: 21rem;
+    margin-left: 10%;
+    margin-top: 4%;
+    line-height: 7rem;
+}
+.taking_jinarcimg{
+    max-width: 80rem;
+    height: 10rem;
+    position: relative;
+}
+.taking_jinarcimg img{
+    width: 100%;
+    height: 100%;
+}
+/*5th page/ What do I need to do while taking Jinarc*/
+
+
+/*6th page/ How will I get my Jinarc medicine*/
+#sixth_page_patient{
+    height: 100dvh;
+    position: relative;
+}
+.reseta_bg{
+    bottom: 0;
+    position: absolute;
+    background-color: #06264f;
+    height: 41.7rem;
+    width: 31%;
+    height: 100%;
+}
+.reseta_img{
+    max-width: 22rem;
+    height: 32rem;
+    position: relative;
+    margin: auto;
+    top: 31%;
+}
+.reseta_img img{
+    width: 100%;
+    height: 100%;
+}
+.get_bg{
+    position: absolute;
+    background-color: #fff2cd;
+    min-height: 100%;
+    width: 69%;
+    font-size: 1.5rem;
+    font-family: AvenirBook;
+    right: 0;
+    top: 0;
+}
+.get_btn{
+    color: white;
+    background: #06264f;
+    margin-top: 12rem;
+    left: 0;
+    padding: 0 3rem 0 1.5rem;
+    font-family: AvenirRoman;
+    font-size: 1.9rem;
+}
+.top_fifth{
+    position: absolute;
+    background-color: rgb(230, 160, 50);
+    border-radius: 10px;
+    text-align: center;
+    width: 10%;
+    right: 7%;
+    top: 24.8%;
+    color: black;
+    cursor: pointer;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.get_bg ol{
+    position: relative;
+    max-width: 75%;
+    min-height: 30rem;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.get_bg ol li{
+    padding-left: 2%;
+}
+.support_team{
+    position: relative;
+    min-height: 7rem;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.support_team p{
+    line-height: 2.8rem;
+    padding-left: 5.5%;
+}
+.telefax_sup{
+    position: absolute;
+    max-width: 2.1rem;
+    height: 2.1rem;
+}
+.telefax_sup img{
+    width: 100%;
+    height: 100%;
+}
+.globe_sup{
+    position: absolute;
+    max-width: 2.1rem;
+    height: 2.1rem;
+}
+.globe_sup img{
+    width: 100%;
+    height: 100%;
+}
+.smart_sup{
+    position: absolute;
+    max-width: 2.5rem;
+    height: 2.5rem;
+}
+.smart_sup img{
+    width: 100%;
+    height: 100%;
+}
+.after_you{
+    margin-top: 4%;
+}
+.warnp{
+    position: relative;
+    min-height: 3rem;
+    margin-top: 3%;
+}
+.warnp p{
+    padding-left: 10%;
+    padding-top: 0.5%;
+}
+.warn_img{
+    position: absolute;
+    max-width: 2rem;
+    height: 2rem;
+    left: 5%;
+}
+.warn_img img{
+    width: 100%;
+    height: 100%;
+}
+/*6th page/ How will I get my Jinarc medicine*/

@@ -1,0 +1,678 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(Fonts/AvenirLTStd-Black.ttf);
+}
+@font-face {
+    font-family: AvenirBook;
+    src: url(Fonts/AvenirLTStd-Book.ttf);
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(Fonts/AvenirLTStd-Roman.ttf);
+}
+body{
+    background: #d9d9d9;
+}
+.assessment{
+    height: 100dvh;
+}
+header{
+    max-width: 100%;
+    max-height: 22rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    column-gap: 22rem;
+    background: white;
+    z-index: 5;
+}
+.jinarc_logo{
+    max-width: 25rem;
+    margin-top: 1rem;
+}
+.jinarc_logo img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    max-width: 100%;
+}
+nav ul li{
+    background-color: #06264f;
+    font-family: AvenirRoman;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+nav ul li a{
+    padding: 20px;
+    font-size: 1.6rem;
+    color: white;
+}
+nav ul li:hover{
+    color:black;
+    background: rgb(230, 160, 50);
+    transition: 0.6s;
+}
+.assess_title{
+    font-size: 2.4rem;
+    font-family: AvenirRoman;
+    color: white;
+    padding: 13px 0;
+    text-align: center;
+    background: #06264f;
+    border-bottom: 7px solid #2d5695;
+    max-width: 100%;
+}
+.input-data{
+    position: relative;
+    margin: 2rem auto;
+    border: 4px solid #2d5695;
+    border-radius: 20px;
+    max-width: 30rem;
+    min-height: 25rem;
+    font-size: 1.6rem;
+    font-family: AvenirRoman;
+
+}
+.input-data > div{
+    padding: 0.9rem 0;
+}
+
+/*Name*/
+.form_name{
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+    top: 1rem;
+}
+.input_name, .inputhos_affi, .input_specialty, .input_email, .input_prc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(230, 160, 50);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    transition: all 160ms ease-in;
+}
+.input_name:hover, .inputhos_affi:hover, .input_specialty:hover,
+.input_email:hover, .input_prc:hover{
+    border-color: #2d5695;
+}
+.input_name:focus, .inputhos_affi:focus, .input_specialty:focus,
+.input_email:focus, .input_prc:focus{
+    border-color: #2d5695;
+}
+.label_name, .label_hos, .label_specialty, .label_email, .label_prc{
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    padding: 0 0.5rem;
+    color: black;
+    cursor: text;
+    transition: top 200ms ease-in
+    left 200ms ease-in
+    font-size 200ms ease-in;
+    background-color: #d9d9d9;
+}
+.input_name:focus ~ .label_name,
+.input_name:not(:placeholder-shown).input_name:not(:focus) ~
+.label_name{
+    top: -0.5em;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+/*Name*/
+
+/*Hospital Affiliation*/
+.form_affi{
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+    top: 4rem;
+}
+.inputhos_affi:focus ~ .label_hos,
+.inputhos_affi:not(:placeholder-shown).inputhos_affi:not(:focus) ~
+.label_hos{
+    top: -0.5em;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+/*Hospital Affiliation*/
+
+/*Specialty*/
+.form_specialty{
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+    top: 7rem;
+}
+.input_specialty:focus ~ .label_specialty,
+.input_specialty:not(:placeholder-shown).input_specialty:not(:focus) ~
+.label_specialty{
+    top: -0.5em;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+/*Specialty*/
+
+/*Email*/
+.form_email{
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+    top: 10rem;
+}
+.input_email:focus ~ .label_email,
+.input_email:not(:placeholder-shown).input_email:not(:focus) ~
+.label_email{
+    top: -0.5em;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+/*Email*/
+
+/*PRC License*/
+.form_prc{
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+    top: 13rem;
+}
+.input_prc:focus ~ .label_prc,
+.input_prc:not(:placeholder-shown).input_prc:not(:focus) ~
+.label_prc{
+    top: -0.5em;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+/*PRC License*/
+.submit_btn{
+    position: relative;
+    align-items: center;
+    min-height: 5rem;
+}
+.submit_assess{
+    position: absolute;
+    font-family: AvenirBook;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgb(230, 160, 50);
+    border: rgb(230, 160, 50);
+    color: black;
+    max-width: 10rem;
+    padding: 5px 35px ;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+}
+.submit_assess:hover{
+    background-color: #06264f;
+    color: white;
+}
+/*Start Assessment*/
+.home-box p{
+    font-family: AvenirRoman;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 8rem auto;
+    max-width: 60%;
+    line-height: 3rem;
+}
+.start_btn{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.start_assess{
+   color: black;
+   font-size: 1.5rem;
+   font-family: AvenirRoman;
+   text-transform: uppercase;
+   border-radius: 10px;
+   background-color: rgb(230, 160, 50);
+   border: rgb(230, 160, 50);
+   width: 23rem;
+   padding: 5px 35px ;
+}
+.start_assess:hover{
+    background-color: #06264f;
+    color: white;
+    transition: 0.4s;
+}
+.custom-box{
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translate(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/*Start Assessment*/
+
+/*Assessment*/
+.quiz-box{
+    position: relative;
+    max-width: 90%;
+    margin: 1rem auto;
+    padding-left: 6rem;
+}
+.option-container{
+    font-size: 1.5rem;
+    font-family: AvenirRoman;
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+.question-number{
+    position: absolute;
+    left: 0%;
+    background: #06264f;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+    font-family: AvenirRoman;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+/*Question Text*/
+.question-text{
+    font-family: AvenirBook;
+    font-size: 1.5rem;
+    padding-left: 7rem;
+    padding-top: 1rem;
+    max-width: 100rem;
+}
+/*Question Text*/
+
+/*Options*/
+.option-container{
+    max-width: 100%;
+    min-height: 27rem;
+
+}
+.circle{
+    background-color: #d5a351;
+    color:white;
+    width: 3%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.option-container .option{
+
+    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0 30px 30px 10px;
+    padding: 0 1px;
+    cursor: pointer;
+    font-size: 17px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+
+    overflow: hidden;
+    position: relative;
+}
+.option-container .circle .active{
+    background: #06264f;
+    color: white;
+}
+.option-container .active{
+    background: #06264f;
+    color: white;
+}
+.option-container .circle:hover{
+    background-color: #06264f;
+    color: white;
+
+    transition:  0.9s;
+}
+.option-container .option:hover{
+
+    color: white;
+
+    transition:  0.9s;
+}
+
+.choices{
+    margin-top: -63px;
+    margin-right: 10px;
+    color:black;
+    font-size: 15px;
+}
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    border-radius: 50%;
+    width: 3%;
+    background-color:#06264fd0;
+    color:white;
+    z-index: 1;
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 50%;
+    width: 3%;
+    background-color:#06264fd0;
+    z-index: 1;
+    animation: slideInLeft 0.5s ease forwards;
+}
+.result-box .answers-indicator div.correct{
+    background-color: #06264f;
+    color: white;
+
+}
+.result-box .answers-indicator div.wrong{
+    background-color: red;
+    color: white;
+
+}
+.result-box .answers-indicator div{
+    z-index: 2;
+}
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.res-nxt{
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    display: flex;
+    max-width: 50%;
+    margin-top: 0.5rem;
+    float: right;
+    gap: 2rem;
+}
+.res-btn:hover, .nxt-btn:hover{
+    background :rgb(230, 160, 50);
+    transition: 0.4s;
+}
+.res-btn{
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background: #06264f;
+    border: #06264f;
+    color: white;
+    padding: 5px 5px;
+    width: 8rem;
+}
+.nxt-btn{
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background: #06264f;
+    border: #06264f;
+    color: white;
+    padding: 5px 5px;
+    width: 8rem;
+    margin-right: 0rem;
+}
+/*Options*/
+
+/*Results Failed*/
+.result-box{
+    margin: 3rem auto;
+    max-width: 90rem;
+    min-height: 33rem;
+    text-align: center;
+    font-family: AvenirRoman;
+    font-size: 1.6rem;
+}
+.custom-box.hide{
+    display: none;
+}
+.correct-answer{
+    margin-top: 2rem;
+    line-height: 4rem;
+}
+.total-correct{
+    background-color: red;
+    color:white;
+    width: 3rem;
+    height: 4rem;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+.assess-result{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.answers-indicator{
+    display: flex;
+    gap: 1rem;
+}
+.result-box .answers-indicator div{
+    border: 1px solid black;
+    background-color: #d9d9d9;
+    padding: 5px 5px;
+    height: 40px;
+    width: 30px;
+}
+.failed-buttons{
+    display:flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 100%;
+    min-height: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: AvenirRoman;
+    font-size: 1.4rem;
+    padding-left: 6rem;
+}
+.failed-buttons p{
+    background: rgb(230, 160, 50);
+    border-radius: 10px;
+    max-width: 35rem;
+    align-items: center;
+    padding: 0.4rem 2rem;
+}
+.failed-buttons p:hover{
+    background: #06264f;
+    color: white;
+    transition: 0.6s;
+}
+.retake{
+    background: rgb(230, 160, 50);
+    border: rgb(230, 160, 50);
+    border-radius: 10px;
+    width: 15rem;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    text-transform: uppercase;
+}
+.preview-guide{
+    background: rgb(230, 160, 50);
+    border: rgb(230, 160, 50);
+    border-radius: 10px;
+    max-width: 21.5rem;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    text-transform: uppercase;
+}
+.preview-info{
+    background: rgb(230, 160, 50);
+    border: rgb(230, 160, 50);
+    border-radius: 10px;
+    max-width: 26rem;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    text-transform: uppercase;
+}
+.retake:hover, .preview-guide:hover, .preview-info:hover{
+    background: #06264f;
+    color: white;
+    transition: 0.3s;
+}
+/*Results*/
+
+/*Results Certified Jinarc Prescriber*/
+.passed-box{
+    border: 1px solid #d9d9d9;
+    max-width: 42%;
+    margin: 1rem auto;
+    position: relative;
+}
+.certified-img{
+    position: absolute;
+    max-width: 11rem;
+    height: 11rem;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 38%;
+    bottom: 50%;
+    transform: rotate(-15deg);
+    z-index: 2;
+}
+.certified-img img{
+    width: 100%;
+    height: 100%;
+}
+.congratulations-container{
+    border: 3px solid #d5a351;
+    background: white;
+    min-height: 2rem;
+    margin-top: 8rem;
+    line-height: 2.4rem;
+    position: relative;
+}
+.congratulations{
+    position: absolute;
+    color: #06ab55;
+    font-family: AvenirBlack;
+    font-weight: 300;
+    font-size: 3.7rem;
+    text-align: center;
+    z-index: 2;
+    top: 40%;
+    left: 5%;
+}
+.confetti-gif{
+    max-width: 100%;
+    height: 9.1rem;
+    z-index: 1;
+}
+.confetti-gif img{
+    width: 100%;
+    height: 100%;
+}
+.certified-prescriber{
+    font-family: AvenirBlack;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    min-height: 10rem;
+    z-index: 2;
+    top: 65%;
+    left: 16%;
+}
+.signature{
+    position: relative;
+    margin-top: 1rem;
+    border: 1px solid #08254e;
+    min-height: 9rem;
+}
+.signature-pad{
+    background-color: white;
+    min-height: 7.8rem;
+    cursor: 1 26, pointer;
+}
+.signature-button{
+    display: flex;
+    background: #08254e;
+    padding: 3px 0 0 0;
+}
+.sign{
+    color: white;
+    font-family: AvenirBook;
+    margin-right: 6.8rem;
+}
+.rst-btn, .done-btn{
+    background: rgb(230, 160, 50);
+    border: rgb(230, 160, 50);
+    color:  white;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.rst-btn{
+    margin-right: 1.5rem;
+}
+
+
+/*Results Certified Jinarc Prescriber*/
+

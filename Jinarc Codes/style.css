@@ -1,0 +1,848 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(Fonts/AvenirLTStd-Black.ttf);
+}
+@font-face {
+    font-family: AvenirBook;
+    src: url(Fonts/AvenirLTStd-Book.ttf);
+}
+@font-face {
+    font-family: AvenirRoman;
+    src: url(Fonts/AvenirLTStd-Roman.ttf);
+}
+body{
+    background-color:#06264f;
+}
+#main_page{
+    height: 100svh;
+}
+/*Jinarc logo*/
+.jinarc_logo{
+    height: 8rem;
+    width: 25rem;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+.jinarc_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*list*/
+.fpage_list ul{
+    position: absolute;
+    display: flex;
+    left: 55%;
+    top: 8%;
+}
+.fpage_list ul li {
+    list-style: none;
+    padding: 1% 3%;
+    text-transform: uppercase;
+    font-family: AvenirRoman;
+    font-size: 1.3rem;
+    background: rgb(230, 160, 50);
+    margin: 0 20px 0 20px;
+    border-radius: 6px;
+}
+.fpage_list ul li a{
+    padding: 0 2px;
+    text-decoration: none;
+    color: black;
+}
+.fpage_list ul li.active{
+    background: white;
+}
+.fpage_list ul li:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+    background: white;
+}
+
+/*first ball*/
+.container_one{
+    left: 5%;
+    top: 35%;
+    position: absolute;   
+}
+.ball{
+    display: flex;
+    width: 15rem;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+/*Wha is ADPKD?*/
+.container_one h2{
+    cursor: pointer;
+    margin-top: 44%;
+    margin-left: 6%;
+    position: absolute;
+    font-family: AvenirRoman;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 13rem;
+    transition: 0.4s ease;
+}
+.container_one b{
+    font-family: AvenirBlack;
+}
+.ball:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.main_ball{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    transition: 0.6s ease;
+}
+.main_ball img{
+    width: 100%;
+    height: 100%;
+}
+.main_ball:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+.first_ball{
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    margin-bottom: 80%;
+    margin-left: 42%;
+    transition: 0.3s ease;
+}
+.first_ball img{
+    width: 100%;
+    height: 100%;
+}
+.first_ball:hover{
+    transform: translate(70%, -40%); 
+}
+.second_ball{
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-top: 59%;
+    margin-left: 70%;
+    position: absolute;
+    transition: 0.4s ease;
+}
+.second_ball img{
+    width: 100%;
+}
+.second_ball:hover{
+    transform: translate(80%, 40%); 
+}
+.third_ball{
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 60%;
+    margin-top: 80%;
+    position: absolute;
+    transition: 0.4s;
+}
+.third_ball:hover{
+    transform: translate(-80%, 30%); 
+}
+.third_ball img{
+    width: 100%;
+    height: 100%;
+}
+
+/*second ball*/
+.container_two{
+    left: 30%;
+    top: 35%;
+    position: absolute;
+}
+/*What is Jinarc?*/
+.container_two .jinarc{
+    cursor: pointer;
+    margin-top: 37%;
+    margin-left: 1rem;
+    position: absolute;
+    font-family: AvenirRoman;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 13rem;
+}
+.container_two b{
+    font-family: AvenirBlack;
+}
+.sball{
+    display: flex;
+    width: 15rem;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.sball:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.smain_ball{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    transition: 0.6s ease;
+}
+.smain_ball img{
+    width: 100%;
+    height: 100%;
+}
+.smain_ball:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+.sfirst_ball{
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top: 86%;
+    margin-left: 40%;
+    transition: 0.4s ease;
+}
+.sfirst_ball img{
+    width: 100%;
+    height: 100%;
+}
+.sfirst_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, 40%); 
+}
+.ssecond_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-bottom: 50%;
+    margin-left: 76%;
+    position: absolute;
+    transition: 0.4s ease;
+}
+.ssecond_ball img{
+    width: 100%;
+}
+.ssecond_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, -60%); 
+}
+.sthird_ball{
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 60%;
+    margin-bottom: 70%;
+    position: absolute;
+    transition: 0.4s;
+}
+.sthird_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-60%, -100%); 
+}
+.sthird_ball img{
+    width: 100%;
+    height: 100%;
+}
+.sfourth_ball{
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 89%;
+    margin-bottom: 39%;
+    position: absolute;
+    transition: 0.4s;
+}
+.sfourth_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, 0%); 
+}
+.sfourth_ball img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Third ball*/
+.container_three{
+    left: 55%;
+    top: 35%;
+    position: absolute;
+}
+/*Prescriber requirement*/
+.container_three .prescriber{
+    cursor: pointer;
+    margin-top: 38%;
+    margin-left: 6.5%;
+    position: absolute;
+    font-family: AvenirRoman;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 13rem;
+}
+.container_three b{
+    font-family: AvenirBlack;
+}
+.tball{
+    display: flex;;
+    width: 15rem;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.tball:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.tmain_ball{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    transition: 0.6s ease;
+}
+.tmain_ball img{
+    width: 100%;
+    height: 100%;
+}
+.tmain_ball:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+.tfirst_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    top: 87%;
+    margin-right: 60%;
+    transition: 0.4s ease;
+}
+.tfirst_ball img{
+    width: 100%;
+    height: 100%;
+}
+.tfirst_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, 40%); 
+}
+.tsecond_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: 80%;
+    margin-left: 63%;
+    position: absolute;
+    transition: 0.4s ease;
+}
+.tsecond_ball img{
+    width: 100%;
+}
+.tsecond_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, -60%); 
+}
+.tthird_ball{
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-left: 80%;
+    margin-bottom: 50%;
+    position: absolute;
+    transition: 0.4s;
+}
+.tthird_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, -100%); 
+}
+.tthird_ball img{
+    width: 100%;
+    height: 100%;
+}
+.tfourth_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 89%;
+    margin-bottom: 39%;
+    position: absolute;
+    transition: 0.4s;
+}
+.tfourth_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, 0%); 
+}
+.tfourth_ball img{
+    width: 100%;
+    height: 100%;
+}
+.tfifth_ball{
+    border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    margin-right: 83%;
+    margin-top: 55%;
+    position: absolute;
+    transition: 0.4s;
+}
+.tfifth_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, 0%); 
+}
+.tfifth_ball img{
+    width: 100%;
+    height: 100%;
+}
+
+/*fourth circle*/
+.container_fourth{
+    left: 80%;
+    top: 35%;
+    position: absolute;
+}
+/*Prescriber requirement*/
+.container_fourth .patient{
+    cursor: pointer;
+    margin-top: 38%;
+    margin-left: 6%;
+    position: absolute;
+    font-family: AvenirRoman;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 13rem;
+}
+.container_fourth b{
+    font-family: AvenirBlack;
+}
+.fball{
+    display: flex;
+    width: 15rem;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.fball:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.fmain_ball{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    transition: 0.6s ease;
+}
+.fmain_ball img{
+    width: 100%;
+    height: 100%;
+}
+.fmain_ball:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+.ffirst_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    margin-bottom: 39%;
+    margin-left: 85%;
+    transition: 0.4s ease;
+}
+.ffirst_ball img{
+    width: 100%;
+    height: 100%;
+}
+.ffirst_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, 40%); 
+}
+.fsecond_ball{
+
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: 80%;
+    margin-left: 54%;
+    position: absolute;
+    transition: 0.4s ease;
+    z-index: 2;
+}
+.fsecond_ball img{
+    width: 100%;
+}
+.fsecond_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(80%, -60%); 
+}
+.fthird_ball{
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-left: 80%;
+    margin-top: 60%;
+    position: absolute;
+    transition: 0.4s;
+    z-index: 1;
+}
+.fthird_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, -100%); 
+}
+.fthird_ball img{
+    width: 100%;
+    height: 100%;
+}
+.ffourth_ball{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 89%;
+    margin-bottom: 39%;
+    position: absolute;
+    transition: 0.4s;
+}
+.ffourth_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, 0%); 
+}
+.ffourth_ball img{
+    width: 100%;
+    height: 100%;
+}
+.ffifth_ball{
+    border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    margin-right: 83%;
+    margin-top: 55%;
+    position: absolute;
+    transition: 0.4s;
+}
+.ffifth_ball:hover{
+    transform: scale(0.3) ;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3); 
+    transform: translate(-80%, 0%); 
+}
+.ffifth_ball img{
+    width: 100%;
+    height: 100%;
+}
+/*waves*/
+.waves{
+    max-width: 100%;
+    min-height: 10rem;
+    position: relative;
+    top: 79.2%;
+    margin-top: 3px;
+}
+.waves_container{
+    width: 100%;
+}
+
+.first_wave{
+    height: 10rem;
+}
+.first_wave img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.second_wave{
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.second_wave img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.third_wave{
+    height: 10rem;
+    width: 100%;    
+    position: absolute;
+    top: 0;
+}
+.third_wave img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.waves_container .left_txt{
+    font-size: 9.5px;
+    font-family: AvenirRoman;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 1%;
+}
+.waves_container .right_txt{
+    font-size: 9.5px;
+    font-family: AvenirRoman;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 78%;
+}
+
+/*Second Page*/
+#second_page{
+    background-color: #06264f;
+    height: 100svh;
+
+}
+.container_spage{
+    height: 40rem;
+    width: 98.8rem;
+    height: 100%;
+    position: relative;
+}
+.human_kidney{
+    bottom: 0;
+    position: absolute;
+    height: 23rem;
+    width: 37rem;
+    top: 35%;
+    left: 5%;
+}
+.human_kidney img{
+    width: 100%;
+    height: 100%;
+}
+.kidney_text{
+    position: absolute;
+    width: 50rem;
+    top: 37%;
+    left: 47%;
+    width: 42.4rem;
+    height: 20rem;
+}
+.kidney_text h1{
+    color: rgb(230, 160, 50);
+    font-family: AvenirBlack;
+    font-size: 2.9rem;
+    margin-bottom: 1.1%;
+}
+.kidney_text p{
+    color: white;
+    font-family: AvenirBook;
+    font-size: 2rem;
+}
+
+
+/*third_page*/
+#third_page{
+    background: #06264f;
+    height: 100dvh;
+    position: relative;
+}
+.rmp{
+    position: absolute;
+    margin: auto;
+    width: 80rem;
+    height: 30rem;
+    top: 25%;
+    left: 8%;
+}
+.rmp h1{
+    list-style-type: style;;
+    color: rgb(230, 160, 50);
+    font-family: AvenirBlack;
+    font-size: 3rem;
+}
+.jinarc_list ul li{
+    margin-top: 1.3%;
+    margin-left: 3%;
+    padding-left: 5px;
+    color: white;
+    font-family: AvenirBook;
+    margin-bottom: 2%;
+    font-size: 2.1rem;
+}
+.jinarc_list p{
+    font-family: AvenirRoman;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    left: 3%;
+    font-size: 1rem;
+}
+/*end of third page*/
+
+/*fourth page*/
+#fourth_page{
+    background: #06264f;
+    height: 100svh;
+    position: relative;
+}
+.container_fpage{
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    width: 80rem;
+}
+.presc{
+    font-family: AvenirBook;
+}
+.presc h1{
+    color: rgb(230, 160, 50);
+    font-size: 3rem;
+}
+.presc p{
+    color: white;
+    
+    margin-top: 1.5%;
+}
+.presc ol{
+    margin-left: 5%;
+    color: white;
+    font-size: 1.8rem;
+}
+.presc ol li{
+    margin-top: 1%;
+}
+.presc ol li .presc_assess{
+    color: black;
+    background: rgb(230, 160, 50);
+    padding: 5px 10px;
+    border-radius: 7px;
+    width: 28rem;
+    font-family: AvenirRoman;
+    margin-bottom: 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.presc_assess::before{
+    content: "▶";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 1.9rem;
+    width: 0.5px;
+    left: -1.2em;
+    position: relative;
+}
+.presc_assess::after{
+    content: "◀";
+    color: rgb(230, 160, 50);
+    display: block;
+    height: 0;
+    font-size: 1.9rem;
+    width: 0.5px;
+    left: 15.1em;
+    bottom: 2rem;
+    position: relative;
+}
+
+.presc_assess a{
+    text-decoration: none;
+    color: black;
+}
+.presc_assess a:hover{
+    color: white;
+}
+.yellow-txt{
+    color: rgb(230, 160, 50);
+}
+.italic-presc{
+    font-style: italic;
+    font-size: 1rem;
+}
+.to-presc{
+    font-size: 1.8rem;  
+}
+/*fifth page*/
+#fifth_page{
+    background: #06264f;
+    height: 100svh;
+    position: relative;
+}
+.container_ftpage{
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    width: 80rem;
+}
+.patients{
+    font-family: AvenirBook;
+}
+.patients h1{
+    color: rgb(230, 160, 50);
+    font-size: 3rem;
+}
+.patients p{
+    color: white;
+    font-size: 1.8rem;  
+    margin-top: 1%;
+}
+.patients ol{
+    margin-top: 2%;
+    margin-left: 5%;
+    color: white;
+    font-size: 1.8rem;
+}
+.patients ol li{
+    margin-top: 2%;
+}
+.patients_list p{
+    font-size: 1rem;
+    margin-left: 5%;
+    font-style: italic;
+}
+.patients_list  b{
+    color: rgb(230, 160, 50);
+}
